@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lan house</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <style>
+        .carousel-dark .carousel-indicators [data-bs-target] {
+            background-color: yellow;
+        }
+
+        main {
+            background-color: rgba(230, 255, 131, 0.5);
+            padding: 10px;
+
+
+        }
+
+        header {
+            background-color: rgba(125, 125, 125, 0.5)
+        }
+
+
+        .navborder,
+        .nav-item {
+            border-radius: 10px;
+            background-color: rgba(230, 255, 131, 0.8);
+            padding: 5px;
+            margin: 2px;
+        }
+
+        .nav-link {
+            font-weight: bold;
+            color: maroon;
+
+        }
+
+        .nav-link:hover {
+            color: red;
+
+        }
+
+        .nav-item:hover {
+            border: solid 1px red;
+        }
+
+        h5 {
+            color: red;
+            font-size: 1.2em
+        }
+        h3{
+            font-size:1em;
+            
+        }
+
+        .col-md-3{
+            text-align:center;
+            border: solid 1px #ccc
+        }
+
+        .d-flex{
+            justify-content:space-between;
+        }
+
+        
+    h1{
+        color: red;
+        border-bottom: solid 1px maroon;
+        padding-bottom: 20px;
+    }
+
+    .tab-pane{
+        
+        margin:8px;
+    }
+
+
+
+    @media screen and (max-width:640px){
+
+        h5 {
+            color: red;
+            font-size: 0.9em
+        }
+        h3{
+            font-size:0.8em;
+            display: flex;
+        }
+
+    }
+
+    @media screen and (min-width:641px) and (max-width:1023px){
+
+        .col-md-10{
+            margin:auto;
+            max-width: 70%;
+        }
+
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="navborder ">
+        
+        <h1 style="border:none;padding-bottom:0;"><span style="color:red">LAN-HOUSE & </span><span style="color:maroon">VARIEDADES</span></h1>
+        </div>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="navbar-collapse collaspe justify-content-end" id="menu-navegacao">
+            <ul class="nav nav-pills d-block d-md-flex">
+                <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="#endereco">Endereço</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+   
+    <main>
+        <div class=" container carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                    class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_1280.jpg">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2017/10/13/15/29/coffee-2847957_1280.jpg">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2019/09/12/18/29/street-cafe-4472312_1280.jpg">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2020/10/07/12/33/cafe-5635015_1280.jpg">
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true"></div>
+        <section id="servicos" class="container mt-5">
+            <h1> Serviços</h1>
+            <div class="row">
+                <aside class="col-md-2">
+                    <nav class="nav nav-pills flex-column nav-cardapio">
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#impressoes-xerox"
+                            class="fw-bold text-start nav-link active">Impressões/Xerox</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#digitacao"
+                            class="fw-bold text-start nav-link text-colored ">Digitação</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#fotos"
+                            class="fw-bold text-start nav-link text-colored ">Revelação de Fotos</button>
+                    </nav>
+                </aside>
+
+
+                <div class="col-md-10" >
+                    <div class="tab-content">
+                  
+                        <div class="tab-pane active" id="impressoes-xerox">
+                           <div class="d-flex">
+                            <div class="col-md-3 ">
+                                <h3>IMPRESSÃO ATÉ 10 FOLHAS</h3>
+                                <h5>R$ 2,00</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <h3>IMPRESSÃO DE 11 A 20 FOLHAS </h3>
+                                <h5>R$ 1,50</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <h3>XEROX</h3>
+                                <h5>R$ 0,50</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="tab-pane" id="digitacao">
+                            <div class="d-flex">
+                            <div class="col-md-3">
+                                <h3>CONTRATO(POR FOLHA) </h3>
+                                <h5>R$ 3,00</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <h3>CONTRATO(POR FOLHA) </h3>
+                                <h5>R$ 3,00</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <h3>CONTRATO(POR FOLHA) </h3>
+                                <h5>R$ 3,00</h5>
+                            </div>
+                            
+                        </div>
+                        </div>
+                        <div class="tab-pane" id="fotos">
+                            <div class="d-flex">
+                                <div class="col-md-3">
+                                    <h3>FOTO 10X15</h3>
+                                    <h5>R$ 3,00</h5>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3>FOTO 10X15 </h3>
+                                    <h5>R$ 3,00</h5>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3>FOTO 10X15</h3>
+                                    <h5>R$ 3,00</h5>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+
+        <section id="endereco" class="container mt-5">
+            <h1>Endereço</h1>
+
+
+            <div class="row">
+                <div id="mapa-google" class="col-12">
+
+                    <!-- MAPA -->
+
+                    <script
+                        src='http://maps.google.com/maps/api/js?key=AIzaSyDv7YRz1WWPhkr6aim8wEm4WDPBdk81z54'></script>
+
+                    <div style='overflow:hidden;height:280px;width:100%;color: #0095eb'>
+                        <div id='gmap_canvas' style='height:100%;width:100%;'></div>
+                        <style>
+                            #gmap_canvas img {
+                                max-width: none !important;
+                                background: none !important
+                            }
+
+                            .gm-ui-hover-effect {
+                                display: none !important;
+                            }
+                        </style>
+                    </div>
+
+                    <!-- Alterar apenas Aqui -->
+                    <script type='text/javascript'>
+                        function init_map() {
+                            var myOptions = { zoom: 13, center: new google.maps.LatLng(-20.1706641, -40.251926), mapTypeId: google.maps.MapTypeId.ROADMAP };
+                            map = new google.maps.Map(document.getElementById('gmap_canvas'),
+                                myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(-20.1706641, -40.251926) });
+                            infowindow = new google.maps.InfoWindow({ content: '<h3><span style="color:red">LAN-HOUSE & </span><span style="color:maroon">VARIEDADES</span></h3>' });
+                            google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker);
+                        } google.maps.event.addDomListener(window, 'load', init_map);
+                    </script>
+                    <!-- Alterar apenas Aqui -->
+
+                    <!-- MAPA -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class = "container mt-4" >
+           <h1>
+            Contato
+           </h1>
+
+           <h3> <span style="color:maroon;">Nosso Número:</span>(00) 90000-0000 <i class="bi bi-whatsapp " style="color:green; margin-left: 4px;"></i></h3>
+
+           <h3 class="mt-3"> <span style="color:maroon;">Email:</span> lanhouse&variedades@email.com <i class="bi bi-envelope-open-fill " style="color:red; margin-left: 4px;"></i></h3>
+
+
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
